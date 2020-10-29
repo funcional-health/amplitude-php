@@ -313,10 +313,6 @@ class Amplitude
         if (empty($event->eventType)) {
             throw new \LogicException(static::EXCEPTION_MSG_NO_EVENT_TYPE);
         }
-        if (empty($this->queue) && !empty($this->apiKey) && (!empty($this->userId) || !empty($this->deviceId))) {
-            // No need to queue, everything seems to be initialized already and queue has already been processed
-            return $this->logEvent();
-        }
         $this->queue[] = $event;
         $this->resetEvent();
 
