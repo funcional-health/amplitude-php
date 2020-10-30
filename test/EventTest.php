@@ -1,6 +1,6 @@
 <?php
 
-namespace funcionalHealth\Amplitude\Test;
+namespace FuncionalHealth\Amplitude\Test;
 
 use PHPUnit\Framework\TestCase;
 use \FuncionalHealth\Amplitude\Event;
