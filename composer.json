@@ -1,5 +1,5 @@
 {
-    "name": "funcional/amplitude-php",
+    "name": "funcional-health/amplitude-php",
     "description": "PHP SDK for Amplitude",
     "keywords": ["amplitude", "sdk", "analytics", "tracking"],
     "homepage": "https://github.com/funcional-health/amplitude-php",
