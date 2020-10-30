@@ -1,5 +1,5 @@
 <?php
-namespace Zumba\Amplitude;
+namespace FuncionalHealth\Amplitude;
 
 class Inflector
 {

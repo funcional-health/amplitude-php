@@ -1,9 +1,9 @@
 <?php
 
-namespace Zumba\Amplitude\Test;
+namespace FuncionalHealth\Amplitude\Test;
 
 use PHPUnit\Framework\TestCase;
-use \Zumba\Amplitude\Inflector;
+use \FuncionalHealth\Amplitude\Inflector;
 
 /**
  * @group amplitude
