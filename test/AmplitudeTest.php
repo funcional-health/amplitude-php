@@ -285,7 +285,7 @@ class AmplitudeTest extends TestCase
         $this->assertNotSame($event, $amplitude->event(), 'Should be creating a new event once one has been queued');
     }
 
-    public function testQueueEventAlreadyInitRunImmediately()
+    public function testQueueEventAlreadyInitDontRunImmediately()
     {
         $amplitude = $this->getMockBuilder(Amplitude::class)
             ->onlyMethods(['logEvent'])
@@ -299,9 +299,14 @@ class AmplitudeTest extends TestCase
         $amplitude->init('APIKEY', 'USER')
             ->queueEvent('Event')
         ;
+        $this->assertTrue(
+            $amplitude->hasQueuedEvents(),
+            'Should not send events as I just executed the queue method'
+        );
+        $amplitude->LogQueuedEvents();
         $this->assertFalse(
             $amplitude->hasQueuedEvents(),
-            'Should have sent event right away since amplitude was already initialized'
+            'Should have sent all events after running logQueueEvents'
         );
     }
 
