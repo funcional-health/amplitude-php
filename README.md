@@ -1,4 +1,4 @@
-# Funcional health fork of Zumba amplitude-php]
+# Funcional health fork of Zumba amplitude-php
 
 the changes made in this fork are related only to the method 'queueEvent' in the Amplitude.php file sending it right away, impacting our response time due to php syncronous characteristics.
 
