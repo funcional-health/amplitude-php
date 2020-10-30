@@ -1,8 +1,8 @@
 {
-    "name": "zumba/amplitude-php",
+    "name": "funcional/amplitude-php",
     "description": "PHP SDK for Amplitude",
     "keywords": ["amplitude", "sdk", "analytics", "tracking"],
-    "homepage": "https://github.com/zumba/amplitude-php",
+    "homepage": "https://github.com/funcional-health/amplitude-php",
     "license": "MIT",
     "authors": [
         {
@@ -12,6 +12,11 @@
         {
             "name": "Jonathan Foote",
             "email": "jonathan.foote@zumba.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Rodrigo Tenorio",
+            "email": "rtenorio@funcionalcorp.com.br",
             "role": "Developer"
         }
     ],
