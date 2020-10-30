@@ -30,8 +30,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Zumba\\Amplitude\\": "./src/",
-            "Zumba\\Amplitude\\Test\\": "./test/"
+            "FuncionalHealth\\Amplitude\\": "./src/",
+            "FuncionalHealth\\Amplitude\\Test\\": "./test/"
         }
     }
 }

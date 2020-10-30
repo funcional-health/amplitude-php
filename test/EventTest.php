@@ -1,9 +1,9 @@
 <?php
 
-namespace Zumba\Amplitude\Test;
+namespace funcionalHealth\Amplitude\Test;
 
 use PHPUnit\Framework\TestCase;
-use \Zumba\Amplitude\Event;
+use \FuncionalHealth\Amplitude\Event;
 
 /**
  * @group amplitude
@@ -17,7 +17,7 @@ class EventTest extends TestCase
     {
         $event = new Event();
         $result = $event->set($name, $value);
-        $this->assertInstanceOf('\Zumba\Amplitude\Event', $result, 'get should return instance of itself');
+        $this->assertInstanceOf('\FuncionalHealth\Amplitude\Event', $result, 'get should return instance of itself');
         $this->assertEquals(json_encode($expected), json_encode($event), $msg);
     }
 

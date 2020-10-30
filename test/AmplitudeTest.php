@@ -1,10 +1,10 @@
 <?php
 
-namespace Zumba\Amplitude\Test;
+namespace funcionalHealth\Amplitude\Test;
 
 use PHPUnit\Framework\TestCase;
-use Zumba\Amplitude\Amplitude;
-use Zumba\Amplitude\Event;
+use FuncionalHealth\Amplitude\Amplitude;
+use FuncionalHealth\Amplitude\Event;
 
 /**
  * @group amplitude

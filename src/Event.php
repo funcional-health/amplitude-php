@@ -1,5 +1,5 @@
 <?php
-namespace Zumba\Amplitude;
+namespace FuncionalHealth\Amplitude;
 
 /**
  * Event object, used to make a consistent interface and serialization of the event JSON used in Amplitude API calls
@@ -130,7 +130,7 @@ class Event implements \JsonSerializable
      *
      * @param string|array $name If array, will set key:value pairs
      * @param string $value Not used if first argument is an array
-     * @return \Zumba\Amplitude\Event
+     * @return \FuncionalHealth\Amplitude\Event
      */
     public function set($name, $value = null)
     {
@@ -194,7 +194,7 @@ class Event implements \JsonSerializable
      * work.  This is not the case for custom event properties however.
      *
      * @param string $name
-     * @return \Zumba\Amplitude\Event
+     * @return \FuncionalHealth\Amplitude\Event
      */
     public function unsetProperty($name)
     {
@@ -214,7 +214,7 @@ class Event implements \JsonSerializable
      * work.  This is not the case for custom event properties however.
      *
      * @param string $name
-     * @return \Zumba\Amplitude\Event
+     * @return \FuncionalHealth\Amplitude\Event
      */
     public function isPropertySet($name)
     {
